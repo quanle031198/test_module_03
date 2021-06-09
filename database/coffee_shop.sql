@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: localhost:3306
--- Thời gian đã tạo: Th6 09, 2021 lúc 11:10 AM
+-- Thời gian đã tạo: Th6 09, 2021 lúc 11:16 AM
 -- Phiên bản máy phục vụ: 10.3.29-MariaDB-0ubuntu0.20.04.1
 -- Phiên bản PHP: 7.4.3
 
@@ -96,7 +96,8 @@ CREATE TABLE `products` (
 INSERT INTO `products` (`id`, `name`, `img`, `price`, `type_id`, `created_at`, `updated_at`) VALUES
 (2, 'Doo mani', 'images/fE9ePR730XRJKMfiS0kxxN8pNhBiXYaPrnTynjBO.jpg', 112.00, 1, '2021-06-08 20:45:29', '2021-06-08 20:58:27'),
 (3, 'cà phê chồn hôi', 'images/AMeQ8PfaTh0fcfFjPCbGiKY6bXEotiU85O94ub9x.jpg', 48.81, 1, '2021-06-08 20:57:00', '2021-06-08 20:57:00'),
-(5, 'Nước hoa quả', 'images/mf8AJhZ0mY5zmGDv1ZNKsVlNQdzdBBxN7L4cEsOd.jpg', 2333.00, 1, '2021-06-08 21:09:10', '2021-06-08 21:09:10');
+(5, 'Nước hoa quả', 'images/mf8AJhZ0mY5zmGDv1ZNKsVlNQdzdBBxN7L4cEsOd.jpg', 2333.00, 1, '2021-06-08 21:09:10', '2021-06-08 21:09:10'),
+(6, 'Thịt Lợn', 'images/YCwED2yheMzBsZ9eeluoxVQkAdx0SkxvcnTAYUR8.jpg', 200000.00, 2, '2021-06-08 21:14:01', '2021-06-08 21:14:01');
 
 -- --------------------------------------------------------
 
@@ -200,7 +201,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT cho bảng `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT cho bảng `types`
