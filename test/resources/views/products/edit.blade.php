@@ -27,12 +27,13 @@
                     <br />
                     <div class="input-group">
                         <select name="type_id" class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
-                            @foreach ($types as $type)
-                                
-                            @endforeach
                             <option >Chọn loại hàng...</option>
+                            @foreach ($types as $type)
                             <option @if ($product->type_id == $type->id) {{ 'selected' }} @endif
                                 value="{{ $type->id }}">{{ $type->name }}</option>
+                            @endforeach
+                           
+                            
                     
                         </select>
                     </div>
